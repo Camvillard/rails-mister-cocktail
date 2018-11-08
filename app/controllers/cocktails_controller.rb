@@ -5,9 +5,6 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
-
-    @cocktail.ingredients
-#
   end
 
   def new
@@ -27,6 +24,7 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
+
   end
 
   private

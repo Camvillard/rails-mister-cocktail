@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     resources :doses, only: [:new, :create]
   end
 
-  resources :dose, only: [:destroy]
+  resources :doses, only: [:destroy]
   # resources :ingredients
 end
