@@ -1,0 +1,10 @@
+<h1>new dose</h1>
+<p>empty for the moment, but wait for it</p>
+
+<h3>yay, let's add a new ingredient to your <%= @cocktail.name %></h3>
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :ingredient_id, collection: @ingredients %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>

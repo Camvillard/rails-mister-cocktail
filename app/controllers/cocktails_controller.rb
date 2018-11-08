@@ -1,18 +1,23 @@
 class CocktailsController < ApplicationController
   def index
-    @cocktails = Coktail.all
+    @cocktails = Cocktail.all
   end
 
   def show
+    @cocktail = Cocktail.find(params[:id])
+
+    @cocktail.ingredients
+#
   end
 
   def new
-  end
-
-  def edit
+    @cocktail = Cocktail.new
+    @ingredients = @cocktail.ingredients
   end
 
   def create
+    @cocktail = Cocktail.new(set_cocktail_params).save
+    redirect_to cocktails_path
   end
 
   def edit
@@ -22,5 +27,11 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def set_cocktail_params
+    params.require(:cocktail).permit(:name, :ingredient_id)
   end
 end

@@ -11,3 +11,7 @@ data = JSON.parse(serialized)
 data['drinks'].each do |d|
   Ingredient.create(name: d['strIngredient1'])
 end
+
+Cocktail.create(name: 'gin to')
+
+puts 'cool cool'
