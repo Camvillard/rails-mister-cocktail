@@ -1,4 +1,5 @@
 class CocktailsController < ApplicationController
+
   def index
     @cocktails = Cocktail.all
   end
@@ -17,19 +18,10 @@ class CocktailsController < ApplicationController
     redirect_to cocktails_path
   end
 
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-
-  end
-
   private
 
   def set_cocktail_params
     params.require(:cocktail).permit(:name, :ingredient_id)
   end
+
 end
