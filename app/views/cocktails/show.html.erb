@@ -5,12 +5,13 @@
   <% @cocktail.doses.each do |dose| %>
     <li>
       <%= dose.description %> <%= dose.ingredient.name.downcase %>
+      <%= dose.details %>
       <%= link_to 'delete', dose_path(dose), method: :delete %>
     </li>
   <% end %>
 </ul>
 
+<%= @cocktail.directions %>
+
 
 <%= link_to 'add a new ingredient', new_cocktail_dose_path(@cocktail) %>
-
-<%= link_to 'home', cocktails_path %>

@@ -13,11 +13,17 @@
   </head>
 
   <body>
+    <header>
+      <ul>
+        <li><%= link_to 'home', cocktails_path %></li>
+        <li><%= link_to 'search', cocktails_path %></li>
+      </ul>
+    </header>
     <%= yield %>
     <footer>
       <%= link_to 'home', cocktails_path %>
     </footer>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
+      <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>

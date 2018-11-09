@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   end
 
   resources :doses, only: [:destroy]
-  # resources :ingredients
+  get '/about', to: "pages#about"
+  get '/contact', to: "pages#contact"
+  get '/test', to: "pages#test"
 end

@@ -14,5 +14,9 @@ data['drinks'].each do |d|
   Ingredient.create(name: d['strIngredient1'].downcase)
 end
 
+Ingredient.create(name: "soda tonic")
+Ingredient.create(name: "coconut cream")
+Ingredient.create(name: "pineapple")
+
 
 puts 'cool cool'

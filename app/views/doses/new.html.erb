@@ -1,5 +1,4 @@
-
-<h3>yay, let's add a new ingredient to your <%= @cocktail.name %></h3>
+<h3>yay, let's add a new dose to your <%= @cocktail.name %></h3>
 
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.input :ingredient_id, collection: @ingredients %>
