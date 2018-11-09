@@ -1,5 +1,6 @@
 <h3><%= @cocktail.name %></h3>
 
+<%= link_to 'add a new ingredient', new_cocktail_dose_path(@cocktail) %>
 
 <ul>
   <% @cocktail.doses.each do |dose| %>
@@ -13,5 +14,4 @@
 
 <%= @cocktail.directions %>
 
-
-<%= link_to 'add a new ingredient', new_cocktail_dose_path(@cocktail) %>
+<%= image_tag @cocktail.image_url %>
