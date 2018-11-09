@@ -1,15 +1,13 @@
-// Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap-theme";
-@import "config/bootstrap";
-// @import "config/bootstrap_variables";
+/* ------ INDEX : VARIABLES ------ */
+
+// =variables
+@import "variables/index";
 
 // External libraries
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Your CSS partials
+// partials
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";

@@ -1,9 +1,40 @@
-<h1>all the cocktails</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
+<div class="container">
 
-<%= link_to 'add a new cocktail', new_cocktail_path %>
+  <div class="row">
+
+    <div class="col-lg-8 col-lg-offset-4">
+
+      <div id="add-cocktail">
+        <%= link_to 'add a cocktail', new_cocktail_path %>
+      </div>
+
+      <div class="row">
+
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-md-6 col-lg-6">
+          <div class="cocktail-card" >
+            <div class="cocktail-tags">
+              tags : gin, fruits, simple
+            </div>
+
+            <div class="cocktail-header">
+              <%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %>
+              <p> <%= cocktail.directions[0..60]%> </p>
+            </div>
+
+          </div>
+        </div>
+      <% end %>
+
+      </div> <!-- end of row -->
+
+    </div> <!-- end of col -->
+
+  </div> <!-- end of row -->
+
+</div> <!-- end of container -->
+
+
+
+

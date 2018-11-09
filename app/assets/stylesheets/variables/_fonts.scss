@@ -1,3 +1,5 @@
+/* ------ VARIABLES : FONTS ------ */
+
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,700,700i|Open+Sans:400,400i|Playfair+Display:400i,700i');
 
@@ -7,8 +9,20 @@ $headers-font: "Josefin Sans", "Helvetica", "sans-serif";
 $accent-font: 'Playfair Display', serif;
 
 
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+  font-family: $headers-font;
+  font-weight: $font-weight-bold;
+}
+
+body {
+  font-size: 16px;
+  font-family: $body-font;
 }
 
 

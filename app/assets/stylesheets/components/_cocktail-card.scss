@@ -1,0 +1,56 @@
+/* ------ COMPONENTS : COCKTAIL CARD ------ */
+
+
+#add-cocktail {
+  position: fixed;
+  left: 6vw;
+  top: 30vh;
+  font-family: $headers-font;
+  text-transform: uppercase;
+  color: $english-green;
+  font-weight: $font-weight-bold;
+  font-size: 3rem;
+}
+
+.cocktail-card {
+  height: 440px;
+  background-color: $apricot;
+  margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .cocktail-tags {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 120px;
+    left: -20px;
+    font-size: 1.1rem;
+    font-family: $accent-font;
+    font-style: italic;
+    // text-align: right;
+  }
+
+  .cocktail-header {
+    position: absolute;
+    left: 62%;
+    top: 60%;
+  }
+
+  .cocktail-name {
+    text-transform: uppercase;
+    color: $english-green;
+    font-family: $headers-font;
+    font-weight: $font-weight-bold;
+    font-size: 3rem;
+  }
+
+  .cocktail-header p {
+    font-family: $accent-font;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+}

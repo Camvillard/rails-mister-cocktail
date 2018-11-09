@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cocktails</title>
+    <title>188 cocktail club</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,14 +14,18 @@
 
   <body>
     <header>
-      <ul>
-        <li><%= link_to 'home', cocktails_path %></li>
-        <li><%= link_to 'search', cocktails_path %></li>
-      </ul>
+        <%= link_to '188 cocktail club', cocktails_path, id: "logo" %>
+        <div id="header-menu">
+          <ul>
+            <li><%= link_to 'about -', about_path %></li>
+            <li><%= link_to 'search -', cocktails_path %></li>
+            <li><%= link_to 'contact', contact_path %></li>
+          </ul>
+        </div>
     </header>
     <%= yield %>
     <footer>
-      <%= link_to 'home', cocktails_path %>
+      <%= link_to 'home', root_path %>
     </footer>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
