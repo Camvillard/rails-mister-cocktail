@@ -1,0 +1,24 @@
+#about-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $apricot;
+  flex-direction: column;
+
+  #about-logo {
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+    font-weight: $font-weight-bold;
+    font-family: $headers-font;
+  }
+
+  #about-content {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+}

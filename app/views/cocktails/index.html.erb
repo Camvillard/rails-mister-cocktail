@@ -1,3 +1,4 @@
+<%= render "/partials/header" %>
 
 <div class="container">
 
@@ -13,12 +14,12 @@
 
       <% @cocktails.each do |cocktail| %>
         <div class="col-md-6 col-lg-6">
-          <div class="cocktail-card" >
-            <div class="cocktail-tags">
+          <div class="cocktails-card" >
+            <div class="cocktails-tags">
               tags : gin, fruits, simple
             </div>
 
-            <div class="cocktail-header">
+            <div class="cocktails-header">
               <%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %>
               <p> <%= cocktail.directions[0..60]%> </p>
             </div>
@@ -34,6 +35,8 @@
   </div> <!-- end of row -->
 
 </div> <!-- end of container -->
+
+<%= render "/partials/footer" %>
 
 
 

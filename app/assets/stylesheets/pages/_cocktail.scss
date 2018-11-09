@@ -1,0 +1,64 @@
+/* ------ PAGES : SINGLE COCKTAIL ------ */
+
+
+#single-cocktail {
+  margin-top: 60px;
+  .container {
+    padding: 10px 60px;
+  }
+
+  h3 {
+    font-size: 6rem;
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  p.details {
+    font-family: $accent-font;
+    font-style: italic;
+    width: 60%;
+  }
+
+  .cocktail-details ul {
+    list-style: none;
+    margin-block-start: 0em;
+    margin-inline-start: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .cocktail-details i {
+    font-size: 1rem;
+  }
+
+  h6.ingredients,
+  h6.directions {
+    font-family: $headers-font;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+}
+.cocktail-image {
+  width: 90%;
+  margin: 0px auto;
+}
+
+#share-actions {
+  position: fixed;
+  transform: rotate(90deg);
+  right: 0;
+  font-family: $accent-font;
+
+  ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  li::after{
+    content: "-";
+  }
+  li:last-child::after {
+    content: "";
+  }
+}

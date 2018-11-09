@@ -1,3 +1,20 @@
 /* ------ VARIABLES : BORDERS ------ */
 
 $border-test: 3px solid red;
+
+
+$border--huge-green: 6px solid $english-green;
+$border--medium-green: 3px solid $english-green;
+$border--light-green: 1px solid $english-green;
+
+$border--huge-eerie: 6px solid $eerie-black;
+$border--medium-eerie: 3px solid $eerie-black;
+$border--light-eerie: 1px solid $eerie-black;
+
+$border--huge-white: 6px solid white;
+$border--medium-white: 3px solid white;
+$border--light-white: 1px solid white;
+
+
+
+$border--medium-transparent: 3px solid transparent;

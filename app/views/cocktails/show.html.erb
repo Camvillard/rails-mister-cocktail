@@ -1,37 +1,54 @@
+<%= render "/partials/header" %>
+
+<div id="share-actions">
+  <ul>
+    <li><%= link_to 'print', root_path %></li>
+    <li><%= link_to 'share', root_path %></li>
+    <li><%= link_to 'save for later', root_path %></li>
+  </ul>
+</div>
+
+<div id="single-cocktail">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 cocktail-details">
+          <h3><%= @cocktail.name %></h3>
+          <p class="details"><%= @cocktail.details %></p>
+          <h6 class="ingredients">ingredients /</h6>
+          <ul>
+            <% @cocktail.doses.each do |dose| %>
+                <li>
+                  <%= dose.description %>
+                  <%= dose.ingredient.name.downcase %>
+                  <%= dose.details %>
+                  <%= link_to dose_path(dose), method: :delete do %>
+                    <i class="fas fa-times-circle"></i>
+                  <% end %>
+              </li>
+            <% end %>
+          </ul>
+          <h6 class="directions">directions /</h6>
+           <p><%= @cocktail.directions %></p>
+          <%= link_to 'add a new ingredient', new_cocktail_dose_path(@cocktail) %>
 
 
-<div class="container">
-  <div class="row">
+      </div> <!-- end of col-lg-6 -->
 
-    <div class="col-lg-6">
-
-      <h3><%= @cocktail.name %></h3>
-      <ul>
-      <% @cocktail.doses.each do |dose| %>
-          <li>
-            <%= dose.description %>
-            <%= dose.ingredient.name.downcase %>
-            <%= dose.details %>
-            <%= link_to 'delete', dose_path(dose), method: :delete %>
-        </li>
-      <% end %>
-      </ul>
-
-    </div>
+      <div class="col-lg-6">
+        <%= image_tag @cocktail.image_url, class: "cocktail-image" %>
+      </div>
 
 
-  </div>
+    </div> <!-- end of row -->
+  </div> <!-- end of tcontainer -->
+
 </div>
 
 
 
 
 
-<%= link_to 'add a new ingredient', new_cocktail_dose_path(@cocktail) %>
 
-<ul>
-</ul>
 
-<%= @cocktail.directions %>
-
-<%= image_tag @cocktail.image_url %>

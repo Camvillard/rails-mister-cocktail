@@ -1,10 +1,13 @@
 /* ------ PAGES : GENERAL ------ */
 
-
 a {
   color: $english-green;
 
   &:hover {
     text-decoration: none;
   }
+}
+
+p, ul, li, a {
+  font-size: 1.6rem;
 }

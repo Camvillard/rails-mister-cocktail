@@ -1,0 +1,41 @@
+/* ------ COMPONENTS : FOOTER ------ */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-left: 2vw;
+  color: $moss-green;
+
+  p {
+    font-family: $headers-font;
+    text-transform: uppercase;
+    font-weight: $font-weight-light;
+    font-size: 1rem;
+  }
+}
+
+#footer-menu {
+
+  ul {
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+  }
+
+  ul > li {
+    font-family: $accent-font;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  li::after{
+    content: " - ";
+  }
+
+  li:last-child::after {
+    content: "";
+  }
+
+  a {
+    color: $moss-green;
+  }
+}

@@ -1,0 +1,64 @@
+/* ------ PAGES : CONTACT ------ */
+
+#contact-page {
+  height: 100vh;
+  background: $moss-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-header {
+}
+
+
+#contact-form {
+  form > input {
+    width: 40vw;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-bottom: $border--medium-transparent;
+    background: $moss-green;
+    height: 6vh;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    font-family: $headers-font;
+  }
+
+  form > input:active,
+  form > input:focus,
+  form > input:visited, {
+    border-bottom: $border--medium-white;
+    outline: 0px;
+    outline-offset: 0px;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: $font-weight-bold;
+
+  }
+//
+  button {
+    width: 40%;
+    margin-left: 30%;
+    border: none;
+    border-bottom: $border--huge-eerie;
+    font-size: 3.6rem;
+    font-family: $headers-font;
+    background: none;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  ::placeholder {
+    font-size: 3rem;
+    color: $eerie-black;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    // text-transform: uppercase;
+  }
+}

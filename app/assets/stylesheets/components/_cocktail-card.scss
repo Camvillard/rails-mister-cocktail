@@ -12,7 +12,7 @@
   font-size: 3rem;
 }
 
-.cocktail-card {
+.cocktails-card {
   height: 440px;
   background-color: $apricot;
   margin-top: 20px;
@@ -21,7 +21,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  .cocktail-tags {
+  .cocktails-tags {
     transform: rotate(-90deg);
     transform-origin: top left;
     position: absolute;
@@ -33,7 +33,7 @@
     // text-align: right;
   }
 
-  .cocktail-header {
+  .cocktails-header {
     position: absolute;
     left: 62%;
     top: 60%;
@@ -47,7 +47,7 @@
     font-size: 3rem;
   }
 
-  .cocktail-header p {
+  .cocktails-header p {
     font-family: $accent-font;
     font-style: italic;
     font-size: 1.2rem;
