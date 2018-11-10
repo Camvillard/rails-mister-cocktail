@@ -1,34 +1,33 @@
 <%= render "/partials/header" %>
 
 <div class="container">
+  <div id="add-cocktail">
+    <%= link_to 'add a cocktail', new_cocktail_path %>
+  </div>
 
   <div class="row">
 
-    <div class="col-lg-8 col-lg-offset-4">
+    <div class="col-lg-9 col-lg-offset-3" id="cocktails-container">
 
-      <div id="add-cocktail">
-        <%= link_to 'add a cocktail', new_cocktail_path %>
-      </div>
-
-      <div class="row">
+      <!-- <div class="row" id="cocktails-container"> -->
 
       <% @cocktails.each do |cocktail| %>
-        <div class="col-md-6 col-lg-6">
-          <div class="cocktails-card" style="background-image: url( <%= cocktail.image %> )">
-            <div class="cocktails-tags">
+        <!-- <div class="col-md-6 col-lg-5 col-lg-offset-1"> -->
+          <div class="cocktail-card" style="background-image: url( <%= cocktail.image %> )">
+            <div class="cocktail-tags">
               tags : gin, fruits, simple
             </div>
 
-            <div class="cocktails-header">
+            <div class="cocktail-header">
               <%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %>
-              <p> <%= cocktail.directions[0..60]%> </p>
+              <p class="cocktail-excerpt"> <%= cocktail.directions[0..60]%> </p>
             </div>
 
           </div>
-        </div>
+        <!-- </div> -->
       <% end %>
 
-      </div> <!-- end of row -->
+      <!-- </div> end of row  -->
 
     </div> <!-- end of col -->
 

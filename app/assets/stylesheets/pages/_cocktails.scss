@@ -1,3 +1,44 @@
-// Place all the styles related to the cocktails controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* ------ PAGES : ALL COCKTAILS ------ */
+
+#cocktails-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 150px;
+}
+
+
+#add-cocktail {
+  position: sticky;
+  left: 0;
+  top: 50%;
+  font-family: $headers-font;
+  text-transform: uppercase;
+  color: $english-green;
+  font-weight: $font-weight-bold;
+
+  a{
+    font-size: 3rem;
+    border-bottom: $border--huge-green;
+  }
+}
+
+// 768 px
+@media only screen and (min-width: $md-device) {
+
+}
+
+// 992 px
+@media only screen and (min-width: $lg-device) {
+
+}
+
+// 1200 px
+@media only screen and (min-width: $xl-device) {
+
+}
+
+// 1440 px
+@media only screen and (min-width: $big-device) {
+
+}
