@@ -18,5 +18,15 @@ Ingredient.create(name: "soda tonic")
 Ingredient.create(name: "coconut cream")
 Ingredient.create(name: "pineapple")
 
+gintoto = Cocktail.create!(
+  name: 'gin toto',
+  directions: 'some gin, some tonic, some ice, some lemon.',
+  details: 'really good.'
+  )
+orange_bourbon = Cocktail.create!(
+  name: 'orange bourbon',
+  directions: 'put some orange in bourbon and drink that.',
+  details: 'really good'
+  )
 
 puts 'cool cool'

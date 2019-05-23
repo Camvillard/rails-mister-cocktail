@@ -1,0 +1,29 @@
+/* ------ PAGES : NEW COCKTAIL ------ */
+
+body#cocktails_new {
+  background: $moss-green;
+}
+
+#new-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form#new_cocktail {
+  width: 50%;
+  input {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  input[type="submit"] {
+    background: $english-green;
+    color: white;
+  }
+}
+
+

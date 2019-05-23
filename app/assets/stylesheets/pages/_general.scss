@@ -1,5 +1,9 @@
 /* ------ PAGES : GENERAL ------ */
 
+html, body {
+  font-size: 62.5%;
+}
+
 a {
   color: $english-green;
 
@@ -8,6 +12,3 @@ a {
   }
 }
 
-p, ul, li, a {
-  font-size: 1.6rem;
-}
