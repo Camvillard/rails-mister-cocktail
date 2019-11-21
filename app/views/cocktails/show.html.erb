@@ -22,7 +22,6 @@
                 <li>
                   <%= dose.description %>
                   <%= dose.ingredient.name.downcase %>
-                  <%= dose.details %>
                   <%= link_to dose_path(dose), method: :delete do %>
                     <i class="fas fa-times-circle"></i>
                   <% end %>
